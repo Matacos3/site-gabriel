@@ -1,0 +1,157 @@
+@font-face {
+  font-family: Normal;
+  src: url("./assets/Fonts/GOTHIC.TTF");
+}
+@font-face {
+  font-family: Bold;
+  src: url("./assets/Fonts/GOTHICB.TTF");
+}
+@font-face {
+  font-family: Ital;
+  src: url("./assets/Fonts/GOTHICI.TTF");
+}
+:root {
+  --color1: teal;
+  --white:rgb(255, 255, 255);
+  --brown:rgb(204, 153, 102);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Normal;
+}
+h1{
+  font-family: Bold;
+  /* font-weight: 100; */
+}
+
+h2{
+  font-family: Bold;
+  font-weight: 100;
+  margin-bottom: 5px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color: var(--white);
+}
+li{
+  list-style-type: none;
+}
+img{
+  margin: 0 10px;
+}
+p,
+ul{
+  margin-bottom: 5px;
+}
+
+#header{
+  height: 55vh;
+  background: url("./assets/imgs/bg_img.jpg") fixed center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#header-container{
+  width:90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#title{
+  width: 600px;
+  color: white;
+  text-shadow:4px -3px 5px black ;
+}
+
+#contact{
+ 
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-around;
+  background: rgb(0, 128, 128);
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#presentation-container{
+  background: var(--brown);
+}
+#presentation{
+  width:90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+
+}
+
+#presentation-txt{
+  text-align: justify;
+  padding-top:20px;
+  padding-right: 10px;
+}
+#presentation1{
+  margin-bottom: 4px;
+}
+
+#presentation2{
+  display: flex;
+  align-items: center;
+}
+
+#academics{
+  margin-right: 10px;
+}
+
+#teacher-experience{
+  margin-left: 10px;
+}
+
+.subtxt{
+  width: 50%;
+  
+}
+
+#description-container{
+  background-color: var(--color1);
+}
+
+#description-content{
+  padding: 20px 0;
+  width:90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+#univ{
+  font-family: Ital;
+}
+
+@media(max-width:600px){
+
+/* passer l’image en dessous du texte */
+
+#presentation{
+  flex-direction: column;
+}
+ /* passer parcours en dessouss d’enseignement */
+#presentation2{
+  flex-direction: column;
+}
+.subtxt{
+  width: 100%;
+}
+
+}
